@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+var n;
+var m;
+
+m=parseInt(prompt("Introduceti un numar natural a=",0));
+n=parseInt(prompt("Introduceti un numar natural b=",0));
+
+var array1 = [];
+var array2 = [];
+var array3 = [];
+
+
+for(let i = 0; i< n ; i++){
+   array1.push([]);
+    for(let j = 0; j< m ; j++){
+      let r = Math.floor(Math.random() * (9 - 0 + 1) + 0);
+      array1[i].push(r)
+    }
+}
+console.log(array1);
+
+for(let i = 0; i< n ; i++){
+   array2.push([]);
+    for(let j = 0; j< m ; j++){
+      let r = Math.floor(Math.random() * (9 - 0 + 1) + 0);
+      array2[i].push(r)
+    }
+}
+console.log(array2);
+
+for(let i = 0; i< n ; i++){
+   array3.push([]);
+   for(let j = 0; j< m ; j++){ 
+      let r = (array1[i][j] + array2[i][j]); 
+      array3[i].push(r)
+   }
+}
+
+console.log(array3);
+   </script> 
+</body>
+</html>
